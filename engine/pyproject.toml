@@ -1,0 +1,23 @@
+[project]
+name = "engine"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "xml152", email = "long123741@outlook.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "ultralytics>=8.4.198",
+]
+
+[project.scripts]
+engine = "engine:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[[tool.uv.index]]
+url = "http://mirrors.aliyun.com/pypi/simple"
+default = true

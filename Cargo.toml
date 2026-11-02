@@ -1,0 +1,26 @@
+[package]
+name = "forge_yolo_rs"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+crossbeam-channel = "0.5"
+eframe = { version = "0.37", default-features = false, features = [
+    "default_fonts",
+    "glow",
+    "persistence",
+    "wayland",
+    "x11",
+] }
+egui = "0.37.0"
+image = { version = "0.25", default-features = false, features = [
+    "bmp",
+    "jpeg",
+    "png",
+    "webp",
+] }
+libc = "0.2"
+rfd = "0.17.2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"

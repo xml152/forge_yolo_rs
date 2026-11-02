@@ -1,0 +1,18 @@
+# Rust
+/target
+
+# Python 引擎
+engine/.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# 引擎产生的数据与产物
+engine/datasets/
+engine/runs/
+/runs/
+
+# 系统垃圾
+.DS_Store
+*.swp
